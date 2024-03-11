@@ -26,7 +26,6 @@
 6. 🔗 [Links](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
 
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -235,9 +234,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
    rel="stylesheet"
 />
-```
-
-
 
 <br />
 <br />

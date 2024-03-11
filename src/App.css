@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -35,12 +39,14 @@
 }
 
 .gradient {
-  height: auto;
+  height: fit-content;
   z-index: 3;
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
-      at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 0%
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
     ),
     radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
     radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
@@ -66,19 +72,9 @@
 /* Tailwind Styles */
 
 .app {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  items-center: center;
-  flex-col: column;
-  max-w-7xl: max-w-7xl;
-  mx-auto: mx-auto;
-  sm:px-16;
-  px-6: px-6;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-/* Continue updating the rest of your styles using plain Tailwind CSS classes */
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
 }
